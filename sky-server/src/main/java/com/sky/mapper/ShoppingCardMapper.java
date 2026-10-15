@@ -14,4 +14,6 @@ public interface ShoppingCardMapper {
 
     @Update("update shopping_cart set number =#{number} where id=#{id}")
     void update(ShoppingCart shoppingCart);
+
+    void list(ShoppingCart shoppingCart);
 }
