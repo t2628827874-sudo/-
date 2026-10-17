@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Select;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.List;
 
 @Mapper
@@ -18,4 +19,5 @@ public interface OrderMapper {
     List<Orders> getByStatesAndOrderTime(Integer status, LocalDateTime orderTime);
 
 
+    Double sumByMap(HashMap map);
 }
