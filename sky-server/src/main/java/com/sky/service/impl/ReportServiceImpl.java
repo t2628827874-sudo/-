@@ -31,8 +31,6 @@ public class ReportServiceImpl implements ReportService {
             begin=begin.plusDays(1);
             dateList.add(begin);
         }
-        dateList.add(end);
-
 
         //存放营业额的集合
         List<Double> turnoverList=new ArrayList<>();
